@@ -18,4 +18,4 @@ jobs:
     uses: RhoderickGalero/Practice/.github/workflows/move_to_in_progress_makkan.yml@main
 
     secrets:
-      token: ${{ secrets.GITHUB_TOKEN }}
+      token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
