@@ -8,10 +8,7 @@ on:
       - assigned
 
 jobs:
-  job3:      
+  job1:      
     uses: RhoderickGalero/practice/.github/workflows/move_to_in_progress_makkan.yml@main
-    permissions: write-all
-    with:
-       config-path: .github/setup-python@v3
-    secrets:
-      GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+    secrets: inherit
+
