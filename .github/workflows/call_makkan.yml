@@ -1,0 +1,17 @@
+name: Call a reusable workflow
+
+permissions: write-all
+
+on:
+  issues:
+    types:
+      - assigned
+
+jobs:
+  call-workflow:
+    uses: RhoderickGalero/practice/.github/workflows/move_to_in_progress_makkan.yml
+
+  call-workflow-passing-data:
+    permissions: write-all
+    secrets:
+      GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
