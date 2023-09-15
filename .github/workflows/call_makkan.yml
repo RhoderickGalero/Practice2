@@ -9,9 +9,7 @@ on:
 
 jobs:
   call-workflow:
-    uses: RhoderickGalero/practice/.github/workflows/move_to_in_progress_makkan.yml
-
-  call-workflow-passing-data:
+    uses: RhoderickGalero/practice/.github/workflows/move_to_in_progress_makkan.yml@1
     permissions: write-all
     secrets:
       GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
