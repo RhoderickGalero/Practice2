@@ -8,15 +8,10 @@ on:
       - assigned
 
 jobs:
-  job1:
-    uses: actions/checkout@v3
-
-  job2:
-    uses: actions/setup-python@v3
-        with:
-          python-version: 3.x
   job3:      
     uses: RhoderickGalero/practice/.github/workflows/move_to_in_progress_makkan.yml@main
     permissions: write-all
+    with:
+       config-path: .github/setup-python@v3
     secrets:
       GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
